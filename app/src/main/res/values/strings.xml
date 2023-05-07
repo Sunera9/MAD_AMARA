@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Amara</string>
+
+    //Add A Fund Form
+    <string name="fund_form">Add a Fund</string>
+    <string name="fund_desc">Add details about the fund that should be inserted in to the funding details in the fund Description page.</string>
+    <string name="form_title1">Funding Details Form</string>
+    <string name="form_title2">Contact Details (Not Shared)</string>
+    <string name="ff_name">Name </string>
+    <string name="ff_desc">Description</string>
+    <string name="ff_cat">Category</string>
+    <string name="ff_endD">End Date</string>
+    <string name="ff_target">Target</string>
+    <string name="ff_cNo">Contact Number</string>
+    <string name="ff_email">E-mail</string>
+    <string-array name="ff_catFeilds">
+        <item></item>
+        <item>Organization</item>
+        <item>Education</item>
+        <item>Health</item>
+        <item>Other</item>
+    </string-array>
+
+    //Formats
+    <string name="date_format">DD/MM/YYYY</string>
+    <string name="cur_format">Rs. </string>
+    <string name="cNo_format">+94-</string>
+    <string name="email_format">123@abc.com</string>
+    <string name="empty_ph"></string>
+
+    //Buttons
+    <string name="btn_confirm">Confirm</string>
+
+
+    //Admin view page
+    <string name="tvAdmin">Admin View(Operational)</string>
+    <string name="edu">Education</string>
+    <string name="health">Health</string>
+    <string name="todo">TODO</string>
+    <string name="org">Organization</string>
+    <string name="other">Other</string>
+    <string name="cats">Categories</string>
+    <string name="onGoing">On Going</string>
+
+    //Fund Details Page
+    <string name="fDetails">Details</string>
+    <string name="todo1">TODO</string>
+    <string name="ff_cNoShort">Contact</string>
+    <string name="btnEdt">Edit</string>
+    <string name="btnDlt">Delete</string>
+    <string name="editFund">Edit Fund</string>
+</resources>

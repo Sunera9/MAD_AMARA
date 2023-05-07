@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "402313465341",
+    "project_id": "amara-d63b3",
+    "storage_bucket": "amara-d63b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402313465341:android:d8dd3d4411676d14379d94",
+        "android_client_info": {
+          "package_name": "com.example.amara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402313465341-phevd4np40g7khnc2brs0qipl3gjbpua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv-R9NwL3yMbBHtdMb55iggdDpKFS_4g4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "402313465341-phevd4np40g7khnc2brs0qipl3gjbpua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
