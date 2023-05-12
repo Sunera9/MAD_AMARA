@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Articles</string>
+    <string name="articles">Articles</string>
+    <string name="convert">Convert</string>
+    <string name="todo">TODO</string>
+    <string name="description_about_the_article">Description about the article</string>
+    <string name="todo1">TODO</string>
+    <string name="description_about_the_article2">Description about the article</string>
+    <string name="articles1">Articles</string>
+    <string name="this_is_the_main_article_of_today_s_articles">This is the main article of today\'s articles</string>
+    <string name="what_s_your_ninterest_today">What\'s Your\nInterest Today?</string>
+    <string name="txt_welcomeArticle">HI!</string>
+    <string name="ArticleButton">Articles</string>
+    <string name="Article2content">Adidas ended its 9-year partnership with Kanye (who legally changed his name to Ye in 2021), in November 2022.</string>
+    <string name="ArticleoneType">•inflation</string>
+    <string name="Article2Content">Dropping Kanye West could cost more than $1 Bn. in sales–Adidas</string>
+    <string name="sri_lanka_s_key_inflation_rate_eases_to_50_6_in_feb">Sri Lanka\'s key inflation rate eases to 50.6% in Feb</string>
+    <string name="Article1Content">Sri Lanka\'s national consumer price inflation, which is released with a lag of 21 days every month, eased to an annual rate of 53.2% in January ...</string>
+    <string name="Article2type">•Market</string>
+    <string name="converticon">ConvertIcon</string>
+    <string name="articletab">Articletab</string>
+    <string name="article1image">Article1Image</string>
+    <string name="article2image">Article2image</string>
+    <string name="addnewpostbtn">AddNewPostBtn</string>
+    <string name="TitlePostArticleTab">Post Your Article</string>
+    <string name="txt_PostArticle">Title</string>
+    <string name="btn_post">POST</string>
+    <string name="TitleBoxHint">Title of your article</string>
+    <string name="ContentBoxHint">Add your content</string>
+    <string name="TxtContent">Content</string>
+    <string name="txtViewUploadImage">Upload Photo</string>
+    <string name="infoAboutImage">JPEG,PNG\n You Can Upload Upto 10 MB.</string>
+    <string name="backButtonPostTab">Back</string>
+    <string name="imgUpload">ImageContent</string>
+    <string name="ArticleMainTitle">Sri Lanka\'s key inflation rate eases to 50.6% in Feb</string>
+    <string name="ArticleContent">Feb 28 (Reuters) - Sri Lanka\'s key inflation rate eased to 50.6% in February from 51.7% in January, the statistics department said on Tuesday, as food prices eased. The Colombo Consumer Price Index (LKCCPI=ECI) (CCPI) reflected a reduction in food prices to 54.4% in February from 60% last month, but non-food inflation climbed to 58.8%, the Census and Statistics Department said in a statement. Sri Lanka has been struggling with soaring prices for over a year, largely caused by its worst financial crisis since it gained Independence from Britain in 1948. The CCPI acts as a lead indicator for broader national prices and shows how inflation is evolving in Colombo, Sri Lanka\'s biggest city.</string>
+    <string name="ArticleType">•Infaltion</string>
+    <string name="ArticleUploadTime">-10 min ago</string>
+    <string name="articlemainimg">ArticleMainImg</string>
+    <string name="deletbutton">DeletButton</string>
+    <string name="editbutton">EditButton</string>
+    <string name="backarticle">BackArticle</string>
+    <string name="optionsarticles">OptionsArticles</string>
+    <string name="EditeArticleTab">Edit Your Article</string>
+    <string name="edit">EDIT</string>
+    <string name="EditImgInfo">JPEG,PNG\n You Can Upload Upto 10 MB.</string>
+    <string name="edit_photo">Edit Photo</string>
+    <string name="AddcontentHint">Add your content</string>
+    <string name="EditContent">Content</string>
+    <string name="EditTitleHint">Title of your article</string>
+    <string name="editarticleimg">EditArticleImg</string>
+    <string name="edittitle">EditTitle</string>
+    <string name="backedittab">BackEditTab</string>
+    <string name="currency_converter">Currency Converter</string>
+    <string name="amountView">Amount</string>
+    <string name="amounthint">Amount</string>
+    <string name="cal_value">1 USD = 348 LKR</string>
+    <string name="currencyimg">CurrencyImg</string>
+    <string name="convertback">Convertback</string>
+    <string name="NewsType">Local</string>
+    <string name="NewsType2">World</string>
+    <string name="NewsType3">Politics</string>
+    <string name="govementimg">GovementImg</string>
+    <string name="txt_Topics">Hot Topics</string>
+    <string name="Welcome_txt">What Are You\nInterest Today?</string>
+    <string-array name="currency_options">
+        <item>LKR</item>
+        <item>USD</item>
+    </string-array>
+    <string-array name="currency_options1">
+        <item>USD</item>
+        <item>LKR</item>
+    </string-array>
+    <string-array name="article_type">
+        <item>Local</item>
+        <item>World</item>
+    </string-array>
+</resources>

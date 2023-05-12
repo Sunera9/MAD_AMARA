@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txt_articlesHome1">34sp</dimen>
+    <dimen name="txt_articleHome2">30sp</dimen>
+    <dimen name="txt_articleHome23">24sp</dimen>
+    <dimen name="txt_articleBtn1">14sp</dimen>
+    <dimen name="txt_articleBtn2">14sp</dimen>
+    <dimen name="txt_articleBtn3">14sp</dimen>
+    <dimen name="txt_articleHome4">24sp</dimen>
+    <dimen name="txt_articleTitle1">14sp</dimen>
+    <dimen name="txt_articleContent1">14sp</dimen>
+    <dimen name="txt_articleTitle2">14sp</dimen>
+    <dimen name="txt_articleContent2">14sp</dimen>
+    <dimen name="txt_articleType1">14sp</dimen>
+    <dimen name="txt_articlePost1">24sp</dimen>
+    <dimen name="txt_articlePost2">20sp</dimen>
+    <dimen name="txt_articlePost3">20sp</dimen>
+    <dimen name="txt_articlePost4">20sp</dimen>
+    <dimen name="txtViewArticle1">20sp</dimen>
+    <dimen name="txtViewArticleType1">20sp</dimen>
+    <dimen name="txtViewArticleTime">14sp</dimen>
+    <dimen name="txtViewArtileContent">16sp</dimen>
+    <dimen name="txt_articleEdit1">24sp</dimen>
+    <dimen name="txt_articleEdit2">20sp</dimen>
+    <dimen name="txt_articleEdit_Edit">20sp</dimen>
+    <dimen name="txt_articleEdit_EditContent">20sp</dimen>
+    <dimen name="txt_CurrencyTab">24sp</dimen>
+    <dimen name="txt_CurrencyTab2">24sp</dimen>
+    <dimen name="txt_articleEdit3" >20sp</dimen>
+    <dimen name="ArticleMarginTop">4dp</dimen>
+    <dimen name="ArticleContentMarginTop1">4dp</dimen>
+    <dimen name="ArticleContentMarginEnd2">16dp</dimen>
+    <dimen name="ArticleTxtView2">8dp</dimen>
+    <dimen name="ArticleTxtView2MarginTop">4dp</dimen>
+    <dimen name="PostTxt1MarginTop">4dp</dimen>
+    <dimen name="PostTxt2MarginTop">24dp</dimen>
+    <dimen name="PostTitleMaringTop">60dp</dimen>
+
+</resources>
+

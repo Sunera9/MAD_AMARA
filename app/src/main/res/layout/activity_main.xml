@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/artciles_cardview"
+    android:elevation="25dp"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.41" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/purple_200"
+        android:backgroundTint="@color/purple_700"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/txt_welcomearticle"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/ArticleTxtView2MarginTop"
+            android:text="@string/txt_welcomeArticle"
+            android:textColor="#FAFAFA"
+            android:textSize="@dimen/txt_articlesHome1"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextSizeCheck,TextSizeCheck" />
+
+        <TextView
+
+            android:id="@+id/txt_welcome2"
+            android:layout_width="338dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="@dimen/ArticleTxtView2"
+            android:fontFamily="sans-serif"
+            android:text="@string/Welcome_txt"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/txt_articleHome2"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.219"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_welcomearticle"
+            tools:ignore="TextSizeCheck,TextSizeCheck" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/const2"
+            android:layout_width="93dp"
+            android:layout_height="137dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/articlebuttons_border"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout3">
+
+            <Button
+                android:id="@+id/btn_convert"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="73dp"
+                android:layout_height="54dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/articls_buttons"
+                android:backgroundTint="@color/secondary"
+                android:fontFamily="sans-serif"
+                android:minHeight="48dp"
+                android:text="@string/NewsType2"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/txt_articleBtn3"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints,SmallSp,TextContrastCheck" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="69dp"
+                android:layout_height="74dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/converticon"
+                app:layout_constraintBottom_toTopOf="@+id/btn_convert"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/convert_icon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/const1"
+            android:layout_width="93dp"
+            android:layout_height="137dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/articlebuttons_border"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/constraintLayout3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="63dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/articletab"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/articles_icon" />
+
+            <Button
+                android:id="@+id/btn_artciles"
+                android:layout_width="66dp"
+                android:layout_height="57dp"
+                android:background="@drawable/articls_buttons"
+                android:backgroundTint="@color/secondary"
+                android:fontFamily="sans-serif"
+                android:text="@string/NewsType"
+                android:textColor="#FAFAFA"
+                android:textSize="@dimen/txt_articleBtn1"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5"
+                app:layout_constraintVertical_bias="0.666"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="93dp"
+            android:layout_height="137dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/articlebuttons_border"
+            android:backgroundTint="#FFFFFF"
+            android:elevation="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/const2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/const1">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="71dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/govementimg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/gov" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="73dp"
+                android:layout_height="54dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/articlebuttons_border"
+                android:backgroundTint="@color/secondary"
+                android:text="@string/NewsType3"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/txt_articleBtn2"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TextContrastCheck,TextSizeCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/txt_Topics"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/txt_articleHome23"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.054"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_welcome2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtview_articles"
+        android:layout_width="147dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="@dimen/ArticleMarginTop"
+        android:elevation="20dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/articles1"
+        android:textColor="#101010"
+        android:textSize="@dimen/txt_articleHome4"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view"
+        tools:ignore="TextSizeCheck" />
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="286dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/artciles_cardview"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="5dp"
+        android:iconifiedByDefault="false"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:queryHint="Search Articles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+    </SearchView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/card_view"
+        android:layout_width="408dp"
+        android:layout_height="390dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtview_articles"
+        app:layout_constraintVertical_bias="1.0"
+        tools:listitem="@layout/article_card_view" />
+
+    <Button
+
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="@string/addnewpostbtn"
+        android:focusable="true"
+        app:backgroundTint="@color/secondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view"
+        app:srcCompat="@drawable/ic_baseline_post_add_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/fetchData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@+id/addButton"
+        app:layout_constraintStart_toEndOf="@+id/txtview_articles"
+        app:layout_constraintTop_toBottomOf="@+id/search_view" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
