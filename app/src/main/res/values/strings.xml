@@ -58,4 +58,5 @@
     <string name="donTxt">Your Donations Will be Directed to the foundation directly.</string>
     <string name="current">Current Total</string>
     <string name="imDonating">I\'m Donating</string>
+    <string name="list">View</string>
 </resources>

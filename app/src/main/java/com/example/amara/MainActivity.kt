@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var targetFill : EditText
     private lateinit var numFill : EditText
     private lateinit var btnSubmit : Button
+    private lateinit var btnFundList : Button
 
     private lateinit var dbRef: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,6 +41,7 @@ class MainActivity : AppCompatActivity() {
         targetFill = findViewById(R.id.etTarget)
         numFill = findViewById(R.id.etNumber)
         btnSubmit = findViewById(R.id.btn_submit)
+        btnFundList = findViewById(R.id.btnFundList)
 
         dbRef = FirebaseDatabase.getInstance().getReference("AmaraFunds")
 
@@ -82,6 +84,11 @@ class MainActivity : AppCompatActivity() {
 
 
 
+        }
+
+        btnFundList.setOnClickListener{
+            val intent = Intent(this, AdminPage::class.java)
+            startActivity((intent))
         }
 
     }
