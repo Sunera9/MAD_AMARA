@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Bill Cart</string>
+
+    <string name="continue2">Continue</string>
+
+    <string name="editTextEmailAddress">Peter1@gmail.com</string>
+    <string name="editTextDate2">02/03/2023</string>
+    <string name="savingsBalance9">Savings Balance : Rs: xxxx.xx</string>
+    <string name="Text1">"You can pay all your basic utility bills here at  a dicounted amount. "</string>
+    <string name="waterText">Water Text</string>
+    <string name="Favourites">Favourites</string>
+    <string name="SavingsBalance">Savings Balance : Rs: xxxx.xx</string>
+    <string name="categoriesTopic">Categories</string>
+    <string name="phoneText">Telephone Bills</string>
+    <string name="electricityText">Electricity Bills</string>
+    <string name="keyText">Finance and Leasing Bills</string>
+    <string name="billersTopic">Billers</string>
+    <string name="phone">Phone</string>
+    <string name="electricity">Electricity</string>
+    <string name="key">Key</string>
+    <string name="account">835xxxxxxxxx</string>
+    <string name="organization">CEB</string>
+    <string name="name">K.R.K Perera</string>
+    <string name="BillAmt">xxxx.xx</string>
+    <string name="discount">15%</string>
+    <string name="finalAmt">xxxx.xx</string>
+    <string name="savingsBalance">Savings Balance : Rs: xxxxx.xx</string>
+    <string name="proceedPay" />
+    <string name="proceedPay1">Proceed to Pay</string>
+    <string name="finalAmt2">Final amount to Pay-</string>
+    <string name="discount2">Discount Percentage-</string>
+    <string name="discount3">(on the Bill amount)</string>
+    <string name="billAmt">Bill Amount-</string>
+    <string name="organization2">Name-</string>
+    <string name="organization1">Organization-</string>
+    <string name="accNo">Account/Ref No -</string>
+    <string name="ElectricityBillTopic">Electricity Bill</string>
+    <string name="checkBox">I hereby confirm that the above information is correct and Agree to the terms and conditions of the \'Helping hands\' organization.</string>
+    <string name="water">water</string>
+    <string name="waterText1">Water Bill</string>
+    <string name="categoriesTopic2">Categories</string>
+    <string name="favElectricity">1.Electricity Bill</string>
+    <string name="organizationFav">Organization: LECO</string>
+    <string name="amtFav">Bill Amount: xxxx.xx</string>
+    <string name="AccountNo_Fav">Account No: 835xxxxxxxxxx</string>
+    <string name="waterBill_fav1">2.Water Bill</string>
+    <string name="organization_fav2">Organization: National water supply
+                         and drainage board</string>
+    <string name="date_fav1">Date: 02/03/2023</string>
+    <string name="accNo_fav1">AccountNo: 55xxxxxxxxx</string>
+    <string name="BillAmt_fav2">Bill Amount: xxxx.xx</string>
+    <string name="date_fav2">Date: 10/03/2023</string>
+    <string name="starElectricity">star</string>
+    <string name="picELectricity">pic</string>
+    <string name="delete1">Delete</string>
+    <string name="edit1">Edit</string>
+    <string name="star1">Star</string>
+    <string name="delete2">Delete</string>
+    <string name="star2">star</string>
+    <string name="edit2">Edit</string>
+
+
+
+//Bill main page
+    <string name="btnElectricity">Electricity </string>
+    <string name="btnWater">Water </string>
+    <string name="btnFinance">Finance and Leasing </string>
+    <string name="btnTelecommunication">Telecommunication </string>
+    <string name="phoneimg">phone</string>
+    <string name="electricityimg">electricity</string>
+    <string name="waterimg">water</string>
+    <string name="keyimg">key</string>
+
+    //Add bill page
+    <string name="accNo_format">Account No</string>
+    <string name="editTextNumber2">+94-</string>
+    <string name="billAmt_format">Amount</string>
+    <string name="email_format">123@gmail.com</string>
+    <string name="date_format">DD/MM/YY</string>
+
+
+    <string name="date">Date: </string>
+    <string name="amount">Bill amount:</string>
+    <string name="accountNo">Account/ Ref No:</string>
+    <string name="mobileNo2">Mobile no:</string>
+    <string name="email">Email:</string>
+    <string name="companyName">Organization:</string>
+
+
+//crud buttons
+    <string name="btnAddBill">Add Bill</string>
+    <string name="btnUpdateBill">Update Bill</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="btnDeleteBill">Delete Bill</string>
+    <string name="btnPayBill">Proceed to pay</string>
+
+
+    //favourites list(bill history)
+    <string name="bDetails">Bill details</string>
+    <string name="ff_org">Organization</string>
+
+
+    <string name="form_title1"></string>
+    <string name="btnfav">Favourites</string>
+    <string name="btnCat">Categories</string>
+
+    <string-array name="Company_name">
+        <item>Lanka Electricity Company (pvt)ltd</item>
+        <item>Ceylon Electricity Board</item>
+
+    </string-array>
+
+</resources>

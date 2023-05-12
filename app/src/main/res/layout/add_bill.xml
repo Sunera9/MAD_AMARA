@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/major"
+    tools:context=".electricity_form">
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="76dp"
+        android:background="#4CAF50"
+        android:backgroundTint="#E91E63"
+        android:text="@string/btnAddBill"
+        android:textColor="@color/major"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="106dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="76dp"
+        android:backgroundTint="@color/color1"
+        android:text="@string/btnCancel"
+        android:textColor="@color/major"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnConfirm"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="413dp"
+        android:layout_height="128dp"
+        android:background="@color/major"
+        android:backgroundTint="@color/color1"
+        android:outlineProvider="none"
+        android:translationZ="-5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintBounds" />
+
+
+    <TextView
+        android:id="@+id/billersTopic3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="56dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Electricity Bills"
+        android:textColor="#FBFBFB"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/l_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="184dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/l_layout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+
+            <TextView
+                android:id="@+id/companyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/companyName"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinCompany"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:entries="@array/Company_name"
+                tools:ignore="TouchTargetSizeCheck,VisualLintBounds" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/l_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+
+            <TextView
+                android:id="@+id/accountNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/accNo"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etAccNo"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/accNo_format"
+                android:inputType="textPersonName"
+                android:textColorHint="#78909C"
+                tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+
+            <TextView
+                android:id="@+id/mobileNo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/mobileNo2"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etMobile"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/app_name"
+                android:inputType="number"
+                android:text="@string/editTextNumber2"
+                android:textColorHint="#78909C"
+                tools:ignore="VisualLintTextFieldSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/amount"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etBill"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="35dp"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/billAmt_format"
+                android:inputType="number"
+                android:textColorHint="#78909C"
+                tools:ignore="VisualLintTextFieldSize,TextContrastCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_layout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/email"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/email_format"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#78909C"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/l_layout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/date"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/date_format"
+                android:inputType="date"
+                android:textColorHint="#78909C"
+                tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize,TextContrastCheck" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

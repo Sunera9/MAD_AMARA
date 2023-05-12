@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color1"
+    tools:context=".activities.MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <TextView
+        android:id="@+id/categoriesTopic"
+        android:layout_width="205dp"
+        android:layout_height="60dp"
+
+        android:background="@drawable/up2small_left"
+        android:backgroundTint="@color/minor"
+        android:paddingTop="15dp"
+        android:text="@string/categoriesTopic"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#F4F0F0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnfav"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        tools:ignore="VisualLintOverlap" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="186dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/electricity" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/up2"
+        android:backgroundTint="@color/major"
+        android:outlineProvider="none"
+        android:paddingEnd="60dp"
+        android:translationZ="-5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="RtlSymmetry,VisualLintBounds" />
+
+    <Button
+        android:id="@+id/btnElectricity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="206dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="@string/btnElectricity"
+        android:textColor="@color/major"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/billersTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/billersTopic"
+        android:textColor="#FBFBFB"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/phone"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="300dp"
+        android:contentDescription="@string/phone"
+        android:outlineProvider="bounds"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/phone2" />
+
+    <Button
+        android:id="@+id/btnTelecommunication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="206dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="@string/btnTelecommunication"
+        android:textColor="@color/major"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/electricity"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="306dp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@string/electricity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/electricity2" />
+
+    <ImageView
+        android:id="@+id/key"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/key"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
+        app:layout_constraintVertical_bias="0.45"
+        app:srcCompat="@drawable/finance" />
+
+    <Button
+        android:id="@+id/btnFinance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="@string/btnFinance"
+        android:textColor="@color/major"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginBottom="534dp"
+        android:text="@string/Text1"
+        android:textAlignment="center"
+        android:textColor="#FFF7F7"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="28dp"
+        android:contentDescription="@string/water"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/water2" />
+
+    <Button
+        android:id="@+id/btnWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="@string/btnWater"
+        android:textColor="@color/major"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnfav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="17dp"
+        android:backgroundTint="@color/major"
+        android:text="@string/btnfav"
+        android:textColor="@color/color"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnfav2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/minor"
+        android:text="@string/btnCat"
+        android:textColor="@color/major"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnfav"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

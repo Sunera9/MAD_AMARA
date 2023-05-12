@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color1"
+    tools:context=".electricity_form">
+
+    <TextView
+        android:id="@+id/billersTopic3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="83dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Electricity Bills"
+        android:textColor="#FBFBFB"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="412dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="128dp"
+        android:background="@color/major"
+        android:backgroundTint="@color/major"
+        android:outlineProvider="none"
+        android:translationZ="-5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintBounds" />
+
+    <Button
+        android:id="@+id/btnConfirm3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="96dp"
+        android:background="#4CAF50"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/btnPayBill"
+        android:textColor="@color/major"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnCancel2"
+        android:layout_width="106dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="96dp"
+        android:backgroundTint="@color/color1"
+        android:text="@string/btnCancel"
+        android:textColor="@color/major"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="356dp"
+        android:layout_marginTop="148dp"
+        android:contentDescription="@string/star1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_star_24"
+        tools:ignore="ImageContrastCheck" />
+
+    <Spinner
+        android:id="@+id/companyName3"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="216dp"
+        android:contentDescription="@string/companyName"
+        android:entries="@array/Company_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/date"
+        android:textColor="@color/material_dynamic_neutral30"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editTextDate2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        tools:ignore="VisualLintOverlap" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="61dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/email"
+        android:textColor="@color/material_dynamic_neutral30"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editTextEmailAddress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount"
+        tools:ignore="VisualLintOverlap" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/amount"
+        android:textColor="@color/material_dynamic_neutral30"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumber3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobileNo2" />
+
+    <TextView
+        android:id="@+id/mobileNo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/mobileNo2"
+        android:textColor="@color/material_dynamic_neutral30"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumber2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accountNo" />
+
+    <TextView
+        android:id="@+id/accountNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="300dp"
+        android:text="@string/accountNo"
+        android:textColor="@color/material_dynamic_neutral30"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumber"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="179dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="179dp"
+        android:text="@string/companyName"
+        android:textColor="@color/material_dynamic_neutral30"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck,VisualLintOverlap" />
+
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="171dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="4dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:text="@string/mobileNo2"
+        android:textColor="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="163dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="348dp"
+        android:layout_marginEnd="4dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:text="@string/editTextNumber2"
+        android:textColor="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="135dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="402dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:text="@string/billAmt_format"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="LabelFor,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextEmailAddress"
+        android:layout_width="208dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="224dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:text="@string/editTextEmailAddress"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/editTextDate2"
+        android:layout_width="133dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="180dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:text="@string/editTextDate2"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="LabelFor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

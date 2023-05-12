@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_billCard">30dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="topic">20dp</dimen>
+    <dimen name="cardBorder">12dp</dimen>
+    <dimen name="gap">10dp</dimen>
+    <dimen name="cardMargin">8dp</dimen>
+</resources>
