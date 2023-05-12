@@ -1,4 +1,4 @@
- package com.example.amara
+package com.example.amara
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.amara.adapters.FundAdapter
 import com.google.firebase.database.*
 
-class AdminPage : AppCompatActivity() {
+class UserDashboard : AppCompatActivity() {
 
     private lateinit var fundRecyclerView: RecyclerView
     private lateinit var fundList: ArrayList<FundModel>
@@ -19,7 +19,7 @@ class AdminPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
-        setContentView(R.layout.activity_admin_page)
+        setContentView(R.layout.activity_user_dashboard)
 
         fundRecyclerView = findViewById(R.id.rv_funds)
         fundRecyclerView.layoutManager = LinearLayoutManager(this)
@@ -29,11 +29,11 @@ class AdminPage : AppCompatActivity() {
 
         getFundData()
 
-        val btnAdd = findViewById<ImageButton>(R.id.btnAdd)
-        btnAdd.setOnClickListener {
-            val intent = Intent(this, UserDashboard::class.java)
-            startActivity(intent)
-        }
+//        val btnAdd = findViewById<ImageButton>(R.id.btnAdd)
+//        btnAdd.setOnClickListener {
+//            val intent = Intent(this, MainActivity::class.java)
+//            startActivity(intent)
+//        }
     }
 
     private fun getFundData(){
@@ -41,7 +41,7 @@ class AdminPage : AppCompatActivity() {
 
         dbRef = FirebaseDatabase.getInstance().getReference("AmaraFunds")
 
-        dbRef.addValueEventListener(object : ValueEventListener{
+        dbRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 fundList.clear()
                 if(snapshot.exists()){
@@ -54,7 +54,7 @@ class AdminPage : AppCompatActivity() {
 
                     mAdapter.setItemOnClickListener(object : FundAdapter.onItemClickListener{
                         override fun onItemClick(position: Int) {
-                            val intent = Intent(this@AdminPage, FundDetails:: class.java)
+                            val intent = Intent(this@UserDashboard, FundDetailsUser:: class.java)
 
                             //put extras
                             intent.putExtra("fundId", fundList[position].fundId)
@@ -81,6 +81,4 @@ class AdminPage : AppCompatActivity() {
 
         })
     }
-
-
 }

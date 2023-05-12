@@ -21,11 +21,9 @@ class FundDetails : AppCompatActivity() {
     private lateinit var btnEdit: Button
     private lateinit var btnDelete: Button
 
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         setContentView(R.layout.activity_fund_details)
 
         initView()

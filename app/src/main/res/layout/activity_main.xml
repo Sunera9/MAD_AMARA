@@ -32,12 +32,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
         android:text="@string/fund_desc"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
@@ -45,13 +45,14 @@
         android:id="@+id/form_title1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:text="@string/form_title1"
         android:textAlignment="center"
         android:textColor="@color/minor"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -60,7 +61,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="15dp"
         android:layout_marginEnd="12dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -187,7 +187,7 @@
 
             <EditText
                 android:id="@+id/etDate"
-                android:layout_width="0dp"
+                android:layout_width="81dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="50dp"
                 android:layout_weight="1"
@@ -197,6 +197,12 @@
                 android:inputType="date"
                 android:textColorHint="#78909C"
                 tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1" />
 
 
         </LinearLayout>
@@ -341,5 +347,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/l_layout7" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/corner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

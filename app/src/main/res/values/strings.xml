@@ -49,4 +49,13 @@
     <string name="btnEdt">Edit</string>
     <string name="btnDlt">Delete</string>
     <string name="editFund">Edit Fund</string>
+
+    //User Dashboard
+    <string name="tvHello">Hello!</string>
+    <string name="txtMsg">\"Let\'s Share your love with everyone.\"</string>
+    <string name="btnPay">Donate</string>
+    <string name="fundUser">This fund will be ending on </string>
+    <string name="donTxt">Your Donations Will be Directed to the foundation directly.</string>
+    <string name="current">Current Total</string>
+    <string name="imDonating">I\'m Donating</string>
 </resources>
