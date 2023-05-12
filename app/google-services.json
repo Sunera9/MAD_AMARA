@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "191688009274",
+    "project_id": "mad-firebase-amara",
+    "storage_bucket": "mad-firebase-amara.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191688009274:android:0d759d161c3ad70d0d7703",
+        "android_client_info": {
+          "package_name": "com.example.madproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191688009274-0nvfrq2p2i0du8jn1971lif8volvthp3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVoTdBplAk2pnqBt6ssAyM_tgB834-kWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191688009274-0nvfrq2p2i0du8jn1971lif8volvthp3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

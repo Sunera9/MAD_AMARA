@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--text size-->
+    <dimen name="dashboard_heading">34sp</dimen>
+    <dimen name="dashboard_subhead">24sp</dimen>
+    <dimen name="dashboard_searchbar">14sp</dimen>
+    <dimen name="dashboard_btn_text">14sp</dimen>
+    <dimen name="application_form_heading">34sp</dimen>
+    <dimen name="application_form_subtext">24sp</dimen>
+    <dimen name="application_form_main_text">20sp</dimen>
+    <dimen name="application_form_text">20sp</dimen>
+    <dimen name="applicatin_form_fill_text">20sp</dimen>
+    <dimen name="application_form_normal">16sp</dimen>
+    <dimen name="btn_submit_text">16sp</dimen>
+    <dimen name="profile_header">34sp</dimen>
+    <dimen name="profile_searchbar">18sp</dimen>
+    <dimen name="profile_text">18sp</dimen>
+    <dimen name="profile_subhead">24sp</dimen>
+    <dimen name="profile_form_text">20sp</dimen>
+    <dimen name="btn_update_text">16sp</dimen>
+    <dimen name="btn_delete_text">16sp</dimen>
+    <dimen name="request_form_normal">18sp</dimen>
+    <dimen name="manage_fund_heading">34sp</dimen>
+    <dimen name="manage_fund_subhead">20sp</dimen>
+    <dimen name="manage_fund_title">24sp</dimen>
+    <dimen name="manage_fund_btn_text">20sp</dimen>
+    <dimen name="manage_fund_text">20sp</dimen>
+    <dimen name="request_form_text_title">20sp</dimen>
+
+
+</resources>

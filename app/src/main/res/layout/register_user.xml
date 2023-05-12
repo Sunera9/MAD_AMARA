@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <ImageView
+            android:id="@+id/iv_bg_top_reg"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            app:srcCompat="@drawable/background_top" />
+
+        <TextView
+            android:id="@+id/tv_reg_heading"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="200dp"
+            android:text="Create New Account"
+            android:textAlignment="textStart"
+            android:textColor="@color/major"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:drawableStart="@drawable/user_person_new"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="UserName"
+            android:inputType="textPersonName"
+            android:paddingStart="5dp" />
+
+        <EditText
+            android:id="@+id/edtEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:drawableStart="@drawable/baseline_email_new"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="5dp" />
+
+        <EditText
+            android:id="@+id/edtPw"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:drawableStart="@drawable/baseline_lock_new"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/edt_re_enter_pw"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:drawableStart="@drawable/baseline_lock_new"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Re-Enter Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/btn_register"
+            android:text="REGISTER"
+            android:textColor="@color/major"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

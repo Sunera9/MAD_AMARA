@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:srcCompat="@drawable/background_top" />
+
+        <TextView
+            android:id="@+id/tv_Hi_userName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/user_profile_tvName"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/profile_header"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_user_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="130dp"
+            android:text="@string/user_profile_tvmail"
+            android:textAlignment="center"
+            android:textColor="@color/major"
+            android:textSize="@dimen/profile_subhead" />
+
+        <ImageView
+            android:id="@+id/iv_profile_pic"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="40dp"
+            app:srcCompat="@drawable/account_circle_24" />
+
+        <ImageView
+            android:id="@+id/iv_verified"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="280dp"
+            app:srcCompat="@drawable/baseline_verified" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:drawableStart="@drawable/user_ic"
+            android:ems="10"
+            android:hint="@string/user_profile_edtName_hint"
+            android:inputType="textPersonName"
+            android:paddingStart="15dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/profile_form_text" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="20dp"
+            android:drawableStart="@drawable/password"
+            android:drawableEnd="@drawable/password_show"
+            android:ems="10"
+            android:hint="@string/user_profile_edtpw_hint"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/profile_form_text" />
+
+        <EditText
+            android:id="@+id/edt_nic_no"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="20dp"
+            android:drawableStart="@drawable/nic_ic"
+            android:ems="10"
+            android:hint="@string/user_profile_edt_nic_hint"
+            android:inputType="numberPassword"
+            android:paddingStart="15dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/profile_form_text" />
+
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="20dp"
+            android:drawableStart="@drawable/mobile_no"
+            android:ems="10"
+            android:hint="@string/user_profile_edtphone_hint"
+            android:inputType="textPersonName"
+            android:paddingStart="15dp"
+            android:paddingEnd="10dp"
+            android:textSize="@dimen/application_form_text" />
+
+        <Button
+            android:id="@+id/btn_update_profile"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/btn_submit"
+            android:elevation="10dp"
+            android:text="Update"
+            android:textColor="@color/major"
+            android:textSize="@dimen/btn_update_text"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_back_profile"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/btn_submit"
+            android:elevation="10dp"
+            android:text="BACK"
+            android:textColor="@color/major"
+            android:textSize="@dimen/btn_delete_text"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

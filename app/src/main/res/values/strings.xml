@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">MAD Project</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+
+    <!--string for application eligible form-->
+    <string-array name="familyMembers_options">
+        <item>Family Members in the Family</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>More than 5</item>
+    </string-array>
+
+    <!--string for request form-->
+    <string-array name="Request_Reason">
+        <item>Fund Request Reason</item>
+        <item>Emergency</item>
+        <item>Medical</item>
+        <item>Educational</item>
+        <item>House construction</item>
+        <item>other</item>
+    </string-array>
+
+    <!--String in DashBoard-->
+    <string name="Dashboard_head_title">Hi Nirmal</string>
+    <string name="Dashboard_subhead_tvemail">nirmal@gmail.com</string>
+    <string name="dashboard_btn_eligible">Check Eligibility</string>
+    <string name="dashboard_btn_request">Request Fund</string>
+    <string name="dashboard_btn_manage">Manage Funds</string>
+    <string name="Dashboard_btn_paybill">Pay Bills</string>
+    <!--String in eligible check form-->
+    <string name="elgible_form_header">Application Form</string>
+    <string name="application_form_subHead">"Form for Fund Receiving "</string>
+    <string name="application_form_tvName">Name:</string>
+    <string name="eligible_form_tvAddress">Address:</string>
+    <string name="application_eligible_tc_contact">Contact Number:</string>
+    <string name="application_form_tvFamDetails">Family Details</string>
+    <string name="application_eform_upload">Upload documents confirming your family details with Gramasewa Certificate</string>
+    <string name="application_eform_tvIncome">Monthly Income Details:</string>
+    <string name="application_form_income_upload">Upload document of your Total monthly Income of the Family</string>
+    <string name="application_eform_btn_submit">Submit</string>
+    <!--String in user profile-->
+    <string name="user_profile_tvName">Nirmal Jayakodi</string>
+    <string name="user_profile_tvmail">nirmal@gmail.com</string>
+    <string name="user_profile_edtName_hint">User Name</string>
+    <string name="user_profile_edtpw_hint">" Password"</string>
+    <string name="user_profile_edt_nic_hint">NIC</string>
+    <string name="user_profile_edtphone_hint">Mobile Number</string>
+    <string name="application_form_tv_firstName_hint">First Name</string>
+    <string name="application_form_tv_lastName_hint">Last Name</string>
+    <string name="application_form_tv_address_hint">Postal address</string>
+    <string name="application_form_tv_homeNo_hint">011-xxxxxxx</string>
+    <string name="application_form_tv_mobileNo_hint">07x-xxxxxxx</string>
+    <!--String in admin view of new users-->
+    <string name="admin_view_list_head">New User List</string>
+    <string name="New_user_list_searchbar_hint">Search Users by Name...</string>
+    <string name="New_user_list_user1_name">Nirmal Jayakodi</string>
+    <string name="New_userlist_user1_date">2023/03/23</string>
+    <string name="New_user_list_user2_name">Mihiri Silva</string>
+    <string name="New_userlist_user2_date">2023/03/10</string>
+    <!--String in fund request form-->
+    <string name="request_form_header">Fund Requesting Form</string>
+    <string name="request_form_fullName">Full Name:</string>
+    <string name="request_form_firstName_hint">First Name</string>
+    <string name="request_form_lastName_hint">Last Name</string>
+    <string name="request_form_contact_no">Contact Number:</string>
+    <string name="request_form_mobile_hint">07x-xxxxxxx</string>
+    <string name="request_form_reason">Reason for Fund Request:</string>
+    <string name="request_form_description">Upload detailed description about the reqesting reason with Gramasewa Certificate</string>
+    <string name="request_form_btn_cancel">Cancel</string>
+    <string name="request_form_btn_submit">Submit</string>
+    <!--String in fund Manage-->
+    <string name="manage_fund_header_userName">Nirmal Jayakodi</string>
+    <string name="Manage_fund_subhead_mail">nirmal@gmail.com</string>
+    <string name="Manage_fund_title">Manage Funds</string>
+    <string name="Manage_fund_details">Recieved Fund Details</string>
+    <string name="Manage_fund_withdrawal">Fund Withdrawals</string>
+    <string name="Manage_fund_item1_date">February 25, 2023</string>
+    <string name="Manage_fund_item1_amount">Rs 10,000</string>
+    <string name="Manage_fund_item2_date">January 25, 2023</string>
+    <string name="Manage_fund_item2_amount">Rs 10,000</string>
+    <string name="tv_applicant_forms">\@dimen/application_form_heading</string>
+    <string name="tv_eligibleCheck_form">Eligibility Request Form</string>
+
+
+</resources>
