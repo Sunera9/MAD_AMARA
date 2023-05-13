@@ -11,9 +11,20 @@ import com.example.billcart.models.BillModel
 class BillAdapter (private val billList: ArrayList<BillModel>) :
     RecyclerView.Adapter<BillAdapter.ViewHolder>() {
 
+    private lateinit var mListener: onItemClickListener
+
+    interface onItemClickListener{
+        fun onItemClick(position: Int)
+    }
+
+    fun setOnItemClickListener(clickListener: onItemClickListener){
+        mListener = clickListener
+    }
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BillAdapter.ViewHolder {
        val itemView =  LayoutInflater.from(parent.context).inflate(R.layout.bill_list_item, parent, false)
-        return ViewHolder(itemView)
+        return ViewHolder(itemView, mListener)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -25,9 +36,15 @@ class BillAdapter (private val billList: ArrayList<BillModel>) :
        return billList.size
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View, clickListener: onItemClickListener) : RecyclerView.ViewHolder(itemView) {
 
         val tvBillName : TextView = itemView.findViewById(R.id.tvBillName)
+
+        init {
+            itemView.setOnClickListener {
+                clickListener.onItemClick(adapterPosition)
+            }
+        }
 
     }
 

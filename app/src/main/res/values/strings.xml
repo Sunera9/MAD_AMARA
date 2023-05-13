@@ -103,6 +103,8 @@
     <string name="form_title1"></string>
     <string name="btnfav">Favourites</string>
     <string name="btnCat">Categories</string>
+    <string name="billID" />
+    <string name="billid">Bill ID</string>
 
     <string-array name="Company_name">
         <item>Lanka Electricity Company (pvt)ltd</item>
