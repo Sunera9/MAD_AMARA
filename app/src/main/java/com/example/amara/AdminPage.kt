@@ -65,8 +65,6 @@ class AdminPage : AppCompatActivity() {
                             intent.putExtra("target", fundList[position].target)
                             intent.putExtra("cNo", fundList[position].num)
                             intent.putExtra("email", fundList[position].email)
-
-
                             startActivity(intent)
                         }
 
