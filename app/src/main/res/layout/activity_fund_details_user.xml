@@ -38,14 +38,15 @@
 
     <View
         android:id="@+id/view2"
-        android:layout_width="match_parent"
-        android:layout_height="496dp"
+        android:layout_width="410dp"
+        android:layout_height="503dp"
         android:background="@drawable/curved_top_large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.719" />
 
     <TextView
         android:id="@+id/tvFundName"
@@ -147,7 +148,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.354" />
 
     <TextView
         android:id="@+id/textView2"
@@ -249,7 +251,8 @@
         android:hint="LKR 0.000"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toEndOf="@+id/tvtCat2"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="TouchTargetSizeCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

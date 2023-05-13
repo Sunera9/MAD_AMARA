@@ -1,8 +1,10 @@
 package com.example.amara
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.database.DatabaseReference
@@ -10,7 +12,8 @@ import com.google.firebase.database.FirebaseDatabase
 
 class FundDetailsUser : AppCompatActivity() {
 
-    private lateinit var etDonate: TextView
+
+    private lateinit var etDonate: EditText
     private lateinit var tvFundName: TextView
     private lateinit var tvFundDesc: TextView
     private lateinit var tvCat: TextView
@@ -38,9 +41,11 @@ class FundDetailsUser : AppCompatActivity() {
         }
     }
 
+    @SuppressLint("SuspiciousIndentation")
     private fun saveDonations(){
        //get donation amount
         val donAmout= etDonate.text.toString()
+
             if(donAmout.isNotEmpty())
                 try {
                     val donationAmount = donAmout.toDouble()
@@ -57,7 +62,8 @@ class FundDetailsUser : AppCompatActivity() {
             }
 
 
-    }
+
+       }
 
     private fun initView(){
 
