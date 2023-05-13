@@ -59,4 +59,5 @@
     <string name="current">Current Total</string>
     <string name="imDonating">I\'m Donating</string>
     <string name="list">View</string>
+    <string name="amt">Amount</string>
 </resources>

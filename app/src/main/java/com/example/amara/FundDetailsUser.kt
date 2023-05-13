@@ -16,6 +16,7 @@ class FundDetailsUser : AppCompatActivity() {
     private lateinit var tvCat: TextView
     private lateinit var tvFundDate: TextView
     private lateinit var tvTarget: TextView
+    private lateinit var tvCurrent: TextView
     private lateinit var btnDonate: Button
 
     private lateinit var dbRef: DatabaseReference
@@ -28,17 +29,17 @@ class FundDetailsUser : AppCompatActivity() {
         etDonate = findViewById(R.id.edt_txtDonate)
         btnDonate = findViewById(R.id.btnDonate)
 
-        dbRef = FirebaseDatabase.getInstance().getReference("FundDonations")
+        dbRef = FirebaseDatabase.getInstance().getReference("AmaraFunds")
 
         initView()
         setValuesToViews()
 
         btnDonate.setOnClickListener{
-//            saveDonations()
+           saveDonations()
         }
     }
 
-    /*private fun saveDonations(){
+    private fun saveDonations(){
 
 
         //get donation amount
@@ -58,8 +59,8 @@ class FundDetailsUser : AppCompatActivity() {
 
             }
 
-        val fundId =
-    }*/
+
+    }
 
     private fun initView(){
 
@@ -67,6 +68,7 @@ class FundDetailsUser : AppCompatActivity() {
         tvFundDesc = findViewById(R.id.tvFundDesc)
         tvCat = findViewById(R.id.tvCat)
         tvFundDate = findViewById(R.id.tvDate)
+        tvCurrent = findViewById(R.id.tvCurrent)
         tvTarget = findViewById(R.id.tvTarget)
 
     }
@@ -77,6 +79,7 @@ class FundDetailsUser : AppCompatActivity() {
         tvFundDesc.text = intent.getStringExtra("fundDesc")
         tvCat.text = intent.getStringExtra("FundCat")
         tvFundDate.text = intent.getStringExtra("endDate")
+        tvCurrent.text = intent.getStringExtra("current")
         tvTarget.text = intent.getStringExtra("target")
 
     }
