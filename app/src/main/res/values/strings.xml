@@ -56,7 +56,8 @@
     <string name="btnPay">Donate</string>
     <string name="fundUser">This fund will be ending on </string>
     <string name="donTxt">Your Donations Will be Directed to the foundation directly.</string>
-    <string name="current">Current Total</string>
+    <string name="current">Current Total: </string>
     <string name="imDonating">I\'m Donating</string>
     <string name="list">View</string>
+    <string name="amt">Amount</string>
 </resources>

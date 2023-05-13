@@ -107,7 +107,7 @@ class MainActivity : AppCompatActivity() {
 
         //Generate custom ID for each fund
         val fundId = dbRef.push().key!! //null check
-        val currentAmount = 0
+
 
         val fund = FundModel(fundId, fundName,desc,date,cat,target,num,email)
 

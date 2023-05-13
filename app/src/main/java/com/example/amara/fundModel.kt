@@ -9,6 +9,4 @@ data class FundModel(
     var target: String? = null,
     var num: String? = null,
     var email: String? = null,
-
-
 )

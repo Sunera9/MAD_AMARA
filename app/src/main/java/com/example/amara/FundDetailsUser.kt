@@ -28,20 +28,18 @@ class FundDetailsUser : AppCompatActivity() {
         etDonate = findViewById(R.id.edt_txtDonate)
         btnDonate = findViewById(R.id.btnDonate)
 
-        dbRef = FirebaseDatabase.getInstance().getReference("FundDonations")
+        dbRef = FirebaseDatabase.getInstance().getReference("AmaraFunds")
 
         initView()
         setValuesToViews()
 
         btnDonate.setOnClickListener{
-//            saveDonations()
+           saveDonations()
         }
     }
 
-    /*private fun saveDonations(){
-
-
-        //get donation amount
+    private fun saveDonations(){
+       //get donation amount
         val donAmout= etDonate.text.toString()
             if(donAmout.isNotEmpty())
                 try {
@@ -58,8 +56,8 @@ class FundDetailsUser : AppCompatActivity() {
 
             }
 
-        val fundId =
-    }*/
+
+    }
 
     private fun initView(){
 

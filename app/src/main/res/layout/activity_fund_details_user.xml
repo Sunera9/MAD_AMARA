@@ -39,12 +39,13 @@
     <View
         android:id="@+id/view2"
         android:layout_width="match_parent"
-        android:layout_height="494dp"
+        android:layout_height="496dp"
         android:background="@drawable/curved_top_large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
         android:id="@+id/tvFundName"
@@ -113,7 +114,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="6dp"
         android:text="@string/ff_cat"
         android:textColor="@color/secondary"
         android:textSize="18sp"
@@ -129,8 +131,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
-        android:textSize="18sp"
         android:textColor="@color/secondary"
+        android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/tvtCat"
         app:layout_constraintTop_toBottomOf="@+id/tvFundDesc" />
 
@@ -138,41 +140,41 @@
         android:id="@+id/btnDonate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="1dp"
         android:backgroundTint="@color/minor"
         android:text="@string/btnPay"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="0dp"
+        android:layout_width="361dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
         android:text="@string/donTxt"
         android:textColor="@color/white"
         android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="340dp"
-        android:layout_height="130dp"
-        android:layout_marginBottom="104dp"
+        android:layout_height="125dp"
+        android:layout_marginBottom="130dp"
         android:background="@drawable/fund_card"
         android:orientation="vertical"
         app:circularflow_radiusInDP="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.394"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="0.294"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCat"
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:id="@+id/layoutTarget"
@@ -227,9 +229,8 @@
 
             <TextView
                 android:id="@+id/tvCurrent"
-                android:layout_width="82dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
