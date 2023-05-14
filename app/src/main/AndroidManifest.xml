@@ -13,7 +13,9 @@
         tools:targetApi="31">
         <activity android:name=".AddArticle" />
         <activity android:name=".FetchingArticles" />
+        <activity android:name=".ArticleEdit" />
         <activity android:name=".ArticleContent" />
+
 
         <activity
             android:name=".MainActivity"

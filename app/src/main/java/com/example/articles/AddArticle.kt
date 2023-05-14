@@ -63,22 +63,25 @@ class AddArticle : AppCompatActivity() {
         val title = title.text.toString()
         val content = content.text.toString()
 
-
         if (selectedImageUri == null) {
             Toast.makeText(this, "Please select an image", Toast.LENGTH_LONG).show()
             return
         }
 
-        val articleId = dbRef.push().key!!
-
+        val articleId = dbRef.push().key ?: ""
         val imageRef = storageReference.child("$articleId.jpg")
+
         imageRef.putFile(selectedImageUri!!)
             .addOnSuccessListener {
                 imageRef.downloadUrl.addOnSuccessListener { uri ->
                     val article = ArticlesModel(articleId, title, content, type, uri.toString())
                     dbRef.child(articleId).setValue(article)
                         .addOnCompleteListener {
-                            Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_LONG).show()
+                            Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_LONG)
+                                .show()
+                            val intent = Intent(this, ArticleContent::class.java)
+                            intent.putExtra("articleId", articleId)
+                            startActivity(intent)
                             finish()
                         }
                         .addOnFailureListener { err ->

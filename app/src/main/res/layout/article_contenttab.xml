@@ -5,178 +5,137 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:backgroundTint="#592942">
+    app:circularflow_defaultRadius="25dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@drawable/constraint_backgroundarticles"
-        android:backgroundTint="#FB9297"
-        android:elevation="25dp"
+    <ImageView
+        android:id="@+id/contentImage"
+
+        android:layout_width="406dp"
+        android:layout_height="306dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.0" />
 
-        <ImageView
-            android:id="@+id/contentImage"
-            android:layout_width="271dp"
-            android:layout_height="276dp"
+    <Button
+        android:id="@+id/floatingActionButton4"
+        android:layout_width="55dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/baseline_delete_forever_24"
+        android:clickable="true"
+        android:contentDescription="@string/editbutton"
+        android:focusable="true"
+        app:backgroundTint="#E91E63"
+        app:circularflow_defaultRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton3"
+        app:srcCompat="@drawable/edit"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,ImageContrastCheck" />
 
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+    <Button
+        android:id="@+id/floatingActionButton5"
+        android:layout_width="57dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/edit"
+        android:clickable="true"
+        android:contentDescription="@string/deletbutton"
+        android:focusable="true"
+        app:backgroundTint="#8BC34A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton4"
+        app:srcCompat="@drawable/vector_delete"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:background="#E91E63"
-            android:clickable="true"
-            android:contentDescription="@string/backarticle"
-            android:focusable="true"
-            app:backgroundTint="#FFFFFF"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24"
-            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:clickable="true"
-            android:contentDescription="@string/optionsarticles"
-            android:focusable="true"
-            app:backgroundTint="#592942"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_baseline_more_vert_24"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:clickable="true"
-            android:contentDescription="@string/editbutton"
-            android:focusable="true"
-            app:backgroundTint="#8BC34A"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/floatingActionButton3"
-            app:srcCompat="@drawable/edit"
-            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,ImageContrastCheck" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="16dp"
-            android:clickable="true"
-            android:contentDescription="@string/deletbutton"
-            android:focusable="true"
-            app:backgroundTint="#E91E63"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/floatingActionButton4"
-            app:srcCompat="@drawable/vector_delete"
-            tools:ignore="SpeakableTextPresentCheck" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="53dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:contentDescription="@string/optionsarticles"
+        android:focusable="true"
+        app:backgroundTint="#592942"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_more_vert_24"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.44" />
-
-    <!--        android:text="@string/ArticleContent"--><![CDATA[
-        android:textColor="#FFFFFF"
-        android:textSize="@dimen/txtViewArtileContent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.307" />
+        app:layout_constraintGuide_percent="0.38061467" />
 
 
+    <!--    <TextView-->
+    <!--        android:id="@+id/articleContent"-->
+    <!--        android:layout_width="382dp"-->
+    <!--        android:layout_height="247dp"-->
+    <!--        android:layout_marginTop="52dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView5" />-->
 
-    ]]><!--        android:text="@string/ArticleMainTitle"--><![CDATA[
-        android:textColor="@color/white"
-        android:textSize="@dimen/txtViewArticle1"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.242"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
-
-    ]]>
-
-    <TextView
-        android:id="@+id/articleTitle"
-        android:layout_width="345dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif"
-        android:text="hehe"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.242"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
-
-    <TextView
-        android:id="@+id/articleContent"
-        android:layout_width="382dp"
-        android:layout_height="247dp"
-        android:layout_marginTop="52dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="542dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/constraint_backgroundarticles"
+        android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/contentImage"
+        app:layout_constraintVertical_bias="0.0">
 
-    <!--        android:text="@string/ArticleType"--><![CDATA[
-        android:textColor="#FF5722"
-        android:textSize="@dimen/txtViewArticleType1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.048"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/articleTitle" />
+        <TextView
+            android:id="@+id/articleTitle"
+            android:layout_width="346dp"
+            android:layout_height="60dp"
+            android:fontFamily="sans-serif"
+            android:text="hehe"
+            android:textColor="@color/black"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    ]]>
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="379dp"
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="74dp"
-        android:layout_height="16dp"
-        android:layout_marginTop="76dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/articleTitle" />
+            android:layout_height="419dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/articleTitle"
+            app:layout_constraintVertical_bias="0.525">
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="@string/ArticleUploadTime"
-        android:textColor="#B7A4DA"
-        android:textSize="@dimen/txtViewArticleTime"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            <TextView
+                android:id="@+id/articleContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="45sp" />
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="74dp"
+            android:layout_height="16dp"
+            tools:layout_editor_absoluteX="22dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
