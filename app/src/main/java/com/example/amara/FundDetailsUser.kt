@@ -1,6 +1,7 @@
 package com.example.amara
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -21,7 +22,7 @@ class FundDetailsUser : AppCompatActivity() {
     private lateinit var tvTarget: TextView
     private lateinit var btnDonate: Button
 
-    private lateinit var dbRef: DatabaseReference
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,39 +32,36 @@ class FundDetailsUser : AppCompatActivity() {
         etDonate = findViewById(R.id.edt_txtDonate)
         btnDonate = findViewById(R.id.btnDonate)
 
-        dbRef = FirebaseDatabase.getInstance().getReference("AmaraFunds")
-
         initView()
         setValuesToViews()
 
-        btnDonate.setOnClickListener{
-           saveDonations()
-        }
+        //get donation amount
+
+            btnDonate.setOnClickListener {
+
+                val donAmout= etDonate.text.toString()
+
+                if(donAmout.isEmpty()){
+                    etDonate.error = "Please add a proper fund Amount"
+                }else {
+                    saveDonations()
+
+                    val intent = Intent(this, PaymentActivity::class.java)
+                        .putExtra("donatedAmount",etDonate.text.toString())
+                    startActivity((intent))
+                }
+            }
     }
 
     @SuppressLint("SuspiciousIndentation")
     private fun saveDonations(){
-       //get donation amount
-        val donAmout= etDonate.text.toString()
+//        val donAmout= etDonate.text.toString()
 
-            if(donAmout.isNotEmpty())
-                try {
-                    val donationAmount = donAmout.toDouble()
-                    // do something with the donationAmount
-                    dbRef.child("donations").setValue(donationAmount)
-                } catch (e: NumberFormatException) {
-                    // handle the case where the input is not a valid floating-point number
-                    Toast.makeText(this, "Invalid input. Please enter a valid donation amount.", Toast.LENGTH_SHORT).show()
-                }
-            else {
-                // handle the case where the input is empty
-                Toast.makeText(this, "Please enter a donation amount.", Toast.LENGTH_SHORT).show()
+//        if(donAmout.isEmpty()){
+//            etDonate.error = "Please add a proper fund Amount"
+//        }
+    }
 
-            }
-
-
-
-       }
 
     private fun initView(){
 

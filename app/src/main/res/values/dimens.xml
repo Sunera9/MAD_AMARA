@@ -6,4 +6,9 @@
     <dimen name="cardBorder">12dp</dimen>
     <dimen name="gap">10dp</dimen>
     <dimen name="cardMargin">8dp</dimen>
+    <dimen name="smallText">10sp</dimen>
+    <dimen name="idLimit">30dp</dimen>
+    <dimen name="cardWidth">80dp</dimen>
+    <dimen name="NormalSize_txt">18sp</dimen>
+    <dimen name="FormFont">20sp</dimen>
 </resources>

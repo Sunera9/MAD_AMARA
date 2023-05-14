@@ -49,6 +49,17 @@
         app:layout_constraintVertical_bias="0.719" />
 
     <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/secondary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tvtDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvtCat" />
+
+    <TextView
         android:id="@+id/tvFundName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -91,8 +102,8 @@
         android:id="@+id/tvtCat2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
         android:text="@string/imDonating"
         android:textColor="@color/minor"
         android:textSize="18sp"
@@ -103,19 +114,20 @@
         android:id="@+id/tvCat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
 
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/secondary"
         android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/tvtDate"
-        app:layout_constraintTop_toBottomOf="@+id/tvtCat" />
+        app:layout_constraintStart_toEndOf="@+id/tvtCat"
+        app:layout_constraintTop_toBottomOf="@+id/tvFundDesc" />
 
     <TextView
         android:id="@+id/tvtDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="12dp"
         android:layout_marginBottom="6dp"
         android:text="@string/ff_cat"
         android:textColor="@color/secondary"
@@ -125,17 +137,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvtCat"
         app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/tvDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:textColor="@color/secondary"
-        android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/tvtCat"
-        app:layout_constraintTop_toBottomOf="@+id/tvFundDesc" />
 
     <Button
         android:id="@+id/btnDonate"
@@ -147,9 +148,10 @@
         android:text="@string/btnPay"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.354" />
+        app:layout_constraintVertical_bias="0.24" />
 
     <TextView
         android:id="@+id/textView2"
@@ -167,16 +169,13 @@
         android:id="@+id/linearLayout2"
         android:layout_width="340dp"
         android:layout_height="125dp"
-        android:layout_marginBottom="130dp"
+        android:layout_marginTop="52dp"
         android:background="@drawable/fund_card"
         android:orientation="vertical"
         app:circularflow_radiusInDP="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.294"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvCat"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toBottomOf="@+id/tvCat">
 
         <LinearLayout
             android:id="@+id/layoutTarget"
@@ -217,27 +216,19 @@
 
             <TextView
                 android:id="@+id/tvtCurrent"
-                android:layout_width="81dp"
+                android:layout_width="@dimen/cardWidth"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:layout_weight="1"
-                android:text="@string/current"
+                android:fontFamily="@font/belleza"
+                android:text="@string/donMatch"
                 android:textColor="@color/major"
-                android:textSize="24sp"
-                android:textStyle="bold"
+                android:textSize="@dimen/NormalSize_txt"
+                android:textStyle="italic"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/tvCurrent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="1"
-                android:textColor="#FEFEFE"
-                android:textSize="24sp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -246,7 +237,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="LKR 0.000"
         android:inputType="numberDecimal"

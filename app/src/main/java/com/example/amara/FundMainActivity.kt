@@ -10,7 +10,7 @@ import android.widget.Toast
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
-class MainActivity : AppCompatActivity() {
+class FundMainActivity : AppCompatActivity() {
 
     //Global variables created for input fields
 
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
 
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main_fund)
 
         val firebase : DatabaseReference = FirebaseDatabase.getInstance().getReference()
 

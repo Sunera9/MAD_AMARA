@@ -54,10 +54,23 @@
     <string name="tvHello">Hello!</string>
     <string name="txtMsg">\"Let\'s Share your love with everyone.\"</string>
     <string name="btnPay">Donate</string>
+
+    //Fund details Page _User
     <string name="fundUser">This fund will be ending on </string>
     <string name="donTxt">Your Donations Will be Directed to the foundation directly.</string>
     <string name="current">Current Total: </string>
     <string name="imDonating">I\'m Donating</string>
     <string name="list">View</string>
     <string name="amt">Amount</string>
+    <string name="donMatch">10% of each of your Donation will be matched by the Organisation fund.</string>
+    <string name="pay">Proceed to Pay</string>
+    <string name="amount">Amount</string>
+    <string name="cardNo">Card Number</string>
+    <string name="exDate">Expiration Date</string>
+    <string name="cvv">CVV</string>
+    <string name="tvThanks">Thank you For Contributing!</string>
+    <string name="rs">LKR</string>
+    <string name="don_matchamount">Is matched by AMARA Funds for your Donation</string>
+    <string name="btnbackHome">Back to Home Page</string>
+    <string name="stslash">/</string>
 </resources>
