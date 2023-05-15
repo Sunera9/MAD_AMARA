@@ -16,6 +16,13 @@ class UserDashboard : AppCompatActivity() {
     private lateinit var fundList: ArrayList<FundModel>
     private lateinit var dbRef : DatabaseReference
 
+    private lateinit var btnHome:ImageButton
+    private lateinit var btnApply:ImageButton
+    private lateinit var btnDonate:ImageButton
+    private lateinit var btnFeed:ImageButton
+    private lateinit var btnBills:ImageButton
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
@@ -25,15 +32,46 @@ class UserDashboard : AppCompatActivity() {
         fundRecyclerView.layoutManager = LinearLayoutManager(this)
         fundRecyclerView.setHasFixedSize(true)
 
+        btnHome = findViewById(R.id.ibHome)
+        btnApply= findViewById(R.id.ibDonate)
+        btnDonate = findViewById(R.id.ibFund)
+        btnFeed = findViewById(R.id.ibFeed)
+        btnBills = findViewById(R.id.ibBills)
+
         fundList = arrayListOf<FundModel>()
 
         getFundData()
 
-//        val btnAdd = findViewById<ImageButton>(R.id.btnAdd)
-//        btnAdd.setOnClickListener {
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-//        }
+
+        btnHome.setOnClickListener {
+            val intent = Intent(this, FundMainActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnHome.setOnClickListener {
+            val intent = Intent(this, FundMainActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnApply.setOnClickListener {
+            val intent = Intent(this, FundMainActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnDonate.setOnClickListener {
+            val intent = Intent(this, UserDashboard::class.java)
+            startActivity(intent)
+        }
+
+        btnFeed.setOnClickListener {
+            val intent = Intent(this, FundMainActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnBills.setOnClickListener {
+            val intent = Intent(this, FundMainActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun getFundData(){

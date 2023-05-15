@@ -62,7 +62,7 @@
     <string name="imDonating">I\'m Donating</string>
     <string name="list">View</string>
     <string name="amt">Amount</string>
-    <string name="donMatch">10% of each of your Donation will be matched by the Organisation fund.</string>
+    <string name="donMatch">5% of each of your Donation will be matched by the Organisation fund.</string>
     <string name="pay">Proceed to Pay</string>
     <string name="amount">Amount</string>
     <string name="cardNo">Card Number</string>
@@ -73,4 +73,9 @@
     <string name="don_matchamount">Is matched by AMARA Funds for your Donation</string>
     <string name="btnbackHome">Back to Home Page</string>
     <string name="stslash">/</string>
+    <string name="navBarHome">Home</string>
+    <string name="navBarRequest">Request</string>
+    <string name="navBarDonate">Donate</string>
+    <string name="navBarFeed">Articles</string>
+    <string name="navbarBills">Bills</string>
 </resources>

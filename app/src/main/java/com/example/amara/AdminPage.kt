@@ -31,7 +31,7 @@ class AdminPage : AppCompatActivity() {
 
         val btnAdd = findViewById<ImageButton>(R.id.btnAdd)
         btnAdd.setOnClickListener {
-            val intent = Intent(this, UserDashboard::class.java)
+            val intent = Intent(this, FundMainActivity::class.java)
             startActivity(intent)
         }
     }

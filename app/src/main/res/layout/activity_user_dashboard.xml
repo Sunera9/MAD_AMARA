@@ -83,7 +83,6 @@
         android:layout_marginStart="16dp"
         android:layout_weight="1"
         android:text="@string/org"
-
         android:textColor="@color/major"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
@@ -183,10 +182,76 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:text="@string/txtMsg"
-        android:textSize="16dp"
         android:textColor="@color/white"
+        android:textSize="16sp"
         android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtHello" />
+
+    <View
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/navbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibHome"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/image_btn"
+        app:layout_constraintStart_toStartOf="@+id/navBar"
+        app:layout_constraintTop_toTopOf="@+id/navBar"
+        app:srcCompat="@drawable/ic_baseline_home_24" />
+
+    <ImageButton
+        android:id="@+id/ibDonate"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/image_btn"
+        app:layout_constraintStart_toEndOf="@+id/ibHome"
+        app:layout_constraintTop_toTopOf="@+id/navBar"
+        app:srcCompat="@drawable/apply_fund" />
+
+    <ImageButton
+        android:id="@+id/ibFund"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/image_btn"
+        app:layout_constraintStart_toEndOf="@+id/ibDonate"
+        app:layout_constraintTop_toTopOf="@+id/navBar"
+        app:srcCompat="@drawable/give" />
+
+    <ImageButton
+        android:id="@+id/ibFeed"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/image_btn"
+        app:layout_constraintStart_toEndOf="@+id/ibFund"
+        app:layout_constraintTop_toTopOf="@+id/navBar"
+        app:srcCompat="@drawable/ic_baseline_newspaper_24" />
+
+    <ImageButton
+        android:id="@+id/ibBills"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/image_btn"
+        app:layout_constraintStart_toEndOf="@+id/ibFeed"
+        app:layout_constraintTop_toTopOf="@+id/navBar"
+        app:srcCompat="@drawable/ic_baseline_attach_money_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
